@@ -1,0 +1,22 @@
+{
+  "name": "disciple-ui",
+  "version": "0.1.0",
+  "description": "Disciple UI is awesome!",
+  "main": "js/app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-animate": "latest",
+    "bootstrap": "~3.2.0",
+    "lodash": "~2.4.1"
+  }
+}
