@@ -32,7 +32,7 @@ You can combine the `build + watch` task with the `serve` task into one command 
 gulp --serve
 ```
 
-It uses port `1337` by default and you can go to http://localhost:1337 to see the site!
+It uses port `1337` by default and you can go to [http://localhost:1337](http://localhost:1337) to see the site!
 
 If you need to use a differnt port, you can manually specify one:
 
