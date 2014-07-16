@@ -56,7 +56,7 @@ server {
         proxy_set_header    X-Real-IP $remote_addr;
         proxy_set_header    X-Forwarded-For $remote_addr;
 
-        proxy_pass          http://localhost:1337; # change this port if you specify a manually port
+        proxy_pass          http://localhost:1337; # change this port if you specify a manual port
         proxy_set_header    Host $host;
     }   
 }
