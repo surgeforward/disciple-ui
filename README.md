@@ -6,7 +6,7 @@
 
 To get started, clone the repo and `cd` into the directory.
 
-Then install `[npm](https://www.npmjs.org/)` modules (used for building) and `[bower](http://bower.io/)` components. Then run `[gulp](http://gulpjs.com/)` to build and "watch":
+Then install `(npm)[https://www.npmjs.org/]` modules (used for building) and `(bower)[http://bower.io/]` components. Then run `(gulp)[http://gulpjs.com/]` to build and "watch":
 
 ```bash
 npm install
@@ -45,7 +45,7 @@ gulp --serve=1234
 
 ### Reverse Proxy
 
-If you want to create a more memorable URL, you can use `[nginx](http://nginx.org/)` (or something similar) as a reverse proxy. Here's a sample config for that:
+If you want to create a more memorable URL, you can use `(nginx)[http://nginx.org/]` (or something similar) as a reverse proxy. Here's a sample config for that:
 
 ```nginx
 server {
