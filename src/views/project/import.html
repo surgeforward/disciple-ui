@@ -1,0 +1,103 @@
+<div class="tab-pane" id="import">
+
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>kaggle-train.csv</td>
+                        <td>CSV</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>kaggle-test.csv</td>
+                        <td>CSV</td>
+                    </tr>
+                    <tr class="success">
+                        <td>3</td>
+                        <td>kaggle-stores.csv</td>
+                        <td>CSV</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>kaggle-features.csv</td>
+                        <td>CSV</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+
+            <div class="well clearfix">
+                <dl class="dl-horizontal">
+                    <dt>Importer</dt>
+                    <dd>stores.csv</dd>
+
+                    <dt>Type</dt>
+                    <dd>CSV</dd>
+
+                    <dt>Dataset</dt>
+                    <dd>Validation</dd>
+
+                    <dt>Status</dt>
+                    <dd>202 OK</dd>
+
+                    <dt>Columns</dt>
+                    <dd>3 / 3</dd>
+
+                    <dt>Records</dt>
+                    <dd>40,000 / 40,000 (100.00%)</dd>
+                </dl>
+            </div>
+
+            <div class="well clearfix">
+                
+                <form role="form">
+
+                    <div class="form-group">
+                        <label for="form-dateFormat">Importer Name</label>
+                        <input type="text" class="form-control" id="form-dateFormat" placeholder="Enter name for this importer" value="kaggle-stores.csv">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-fieldType">Type</label>
+                        <select id="form-fieldType" class="form-control">
+                            <option>CSV</option>
+                            <option>JSON</option>
+                            <option>Mongo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-dateFormat">Dataset</label>
+                        <select id="form-fieldType" class="form-control">
+                            <option>Training</option>
+                            <option selected>Validation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form-dateFormat">URL</label>
+                        <input type="text" class="form-control" id="form-dateFormat" placeholder="Enter url to access csv" value="http://example.com/data.csv">
+                    </div>
+
+                    <div class="btn-group pull-right">
+                        <a href="project/PROJECT-UUID/configure" class="btn btn-info">Configure</a>
+                        <button type="button" class="btn btn-primary">Run</button>
+                    </div>
+
+                    <div class="btn-group pull-left">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
