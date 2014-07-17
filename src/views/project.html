@@ -1,0 +1,57 @@
+<div class="container-fluid" ng-init="init()">
+    
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="/">Dashboard</a></li>
+                <li class="active"><a href="projects">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        
+        <h1 class="page-header">Kaggle Walmart Sales Forecasts</h1>
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li ng-repeat="tab in tabs" ng-click="activeTab=tab" ng-class="{active: isActive(tab)}">
+                <a href="project/PROJECT-UUID/{{ tab }}">{{ tab }}</a>
+            </li>
+        </ul>
+        
+        <div class="tab-content">
+            
+            <div ng-if="activeTab=='features'">
+                <ng-include src="'views/project/features.html'">
+            </div>
+
+            <div ng-if="activeTab=='training'">
+                <ng-include src="'views/project/list.html'">
+            </div>
+
+            <div ng-if="activeTab=='validation'">
+                <ng-include src="'views/project/list.html'">
+            </div>
+
+            <div ng-if="activeTab=='import'">
+                <ng-include src="'views/project/import.html'">
+            </div>
+
+            <div ng-if="activeTab=='configure'">
+                <ng-include src="'views/project/configure.html'">
+            </div>
+
+            <div ng-if="activeTab=='models'">
+                <ng-include src="'views/project/models.html'">
+            </div>
+
+            <div ng-if="activeTab=='model'">
+                <ng-include src="'views/project/model.html'">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

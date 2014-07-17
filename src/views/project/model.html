@@ -1,0 +1,112 @@
+<br />
+
+<div class="btn-group pull-right">
+    <button type="button" class="btn btn-xs btn-danger">Delete</button>
+    <button type="button" class="btn btn-xs btn-info">Validate</button>
+    <button type="button" class="btn btn-xs btn-info">Train</button>
+</div>
+
+<h3 class="page-header">Walmart Model (KNN)</h3>
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="well clearfix">
+            <h6>Details</h6>
+            <dl class="dl-horizontal">
+                
+                <dt>Status</dt>
+                <dd>Training (43%)</dd>
+
+                <dt>Training Records</dt>
+                <dd>400,000</dd>
+
+                <dt>Validation Records</dt>
+                <dd>40,000 (10.00%)</dd>
+
+                <dt>Features</dt>
+                <dd>8</dd>
+
+                <dt>Filters</dt>
+                <dd>3</dd>
+
+                <dt>Estimate Training Time</dt>
+                <dd>5m 30s per disciple</dd>
+            </dl>
+        </div>
+
+        <div class="well clearfix">
+            <button type="button" class="btn btn-xs btn-info pull-right">Analyze</button>
+            <h6>Metrics</h6>
+
+            <dl class="dl-horizontal">
+
+                <dt>Weighted Sq Error</dt>
+                <dd>1892</dd>
+
+                <dt>Sq Error</dt>
+                <dd>2300</dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="well clearfix">
+            <h6>Features</h6>
+            <select class="form-control pull-left" style="width: 50%; height: 250px;" multiple>
+                <option selected>Store</option>
+                <option selected>Dept</option>
+                <option selected>Date</option>
+                <option selected>Type</option>
+                <option selected>Size</option>
+                <option>Temperature</option>
+                <option>Fuel Price</option>
+                <option selected>MarkDown1</option>
+                <option selected>MarkDown2</option>
+                <option>MarkDown3</option>
+                <option>MarkDown4</option>
+                <option>MarkDown5</option>
+                <option>CPI</option>
+                <option>Unemployment</option>
+                <option selected>IsHoliday</option>
+            </select>
+            <select class="form-control pull-right" style="width: 50%; height: 250px;" multiple>
+                <option>Store</option>
+                <option>Dept</option>
+                <option>Date</option>
+                <option>Type</option>
+                <option>Size</option>
+                <option selected>MarkDown1</option>
+                <option selected>MarkDown2</option>
+                <option>IsHoliday</option>
+            </select>
+        </div>
+
+        <div class="well">
+            <h6>Filters</h6>
+            <table class="table table-striped">
+                <thead>
+                    <th>Filter</th>
+                    <th>Column</th>
+                    <th>Params</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Complete Missing</td>
+                        <td>MarkDown1, MarkDown2</td>
+                        <td>{type: Mean}</td>
+                    </tr>
+                    <tr>
+                        <td>Normalize</td>
+                        <td>All</td>
+                        <td>{type: Mean}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
