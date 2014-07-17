@@ -16,14 +16,16 @@ angular.module('disciple-ui', ['ngRoute', 'ngAnimate'])
             controller: angular.noop(),
             templateUrl: 'views/analyze/tasks.html'
         })
-        .when('/data/', {
-            controller: angular.noop(),
-            templateUrl: 'views/data.html'
+        
+        .when('/project/:PROJECT-UUID/:TAB', {
+            controller: 'ProjectCtrl',
+            templateUrl: 'views/project.html'
         })
-        .when('/dataset/', {
+        .when('/projects', {
             controller: angular.noop(),
-            templateUrl: 'views/dataset.html'
+            templateUrl: 'views/projects.html'
         })
+
         .when('/deploy/', {
             controller: angular.noop(),
             templateUrl: 'views/deploy.html'
@@ -31,14 +33,6 @@ angular.module('disciple-ui', ['ngRoute', 'ngAnimate'])
         .when('/', {
             controller: angular.noop(),
             templateUrl: 'views/index.html'
-        })
-        .when('/model/', {
-            controller: angular.noop(),
-            templateUrl: 'views/model.html'
-        })
-        .when('/models/', {
-            controller: angular.noop(),
-            templateUrl: 'views/models.html'
         })
         .when('/tasks/', {
             controller: angular.noop(),
