@@ -16,7 +16,6 @@
     "angular": "latest",
     "angular-route": "latest",
     "angular-animate": "latest",
-    "bootstrap": "~3.2.0",
     "lodash": "~2.4.1"
   }
 }
